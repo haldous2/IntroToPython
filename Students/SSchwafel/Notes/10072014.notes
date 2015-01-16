@@ -4,7 +4,7 @@ Notes for 10/7/2014
 
   None is default return value if a function doesn't return something else
 
-print grid notes  
+print grid notes
 
     Uses NUMBER to make the number of boxes increase without a newline
 
@@ -19,9 +19,9 @@ A graph of "states in" which your code has existed
 
 Graph = places/states with paths between them
 
-A set of points of time with a history of where you've been 
+A set of points of time with a history of where you've been
 
-Each point has a name that uniquely identifies it called a HASH 
+Each point has a name that uniquely identifies it called a HASH
 
 HEAD = always there, and always points to the point in time you're currently looking at
 
@@ -40,7 +40,7 @@ You can use this to switch between branches and make changes in isolation
 
 Git encourages making lots and lots of SMALL COMMITS
 
-Branching allows you to keep related sets of work separate from each other 
+Branching allows you to keep related sets of work separate from each other
 
 Simply create a new branch for each session from your repository master branch
 
@@ -99,11 +99,11 @@ Finally, you can fetch and then merge changes from the upstream master
 
     git checkout master
 
-You can do all in one step with 
+You can do all in one step with
 
     git pull upstream master
 
-git pull fetches changes, brings them locally, and then merges them in 
+git pull fetches changes, brings them locally, and then merges them in
 
     Just doesn't show what the changes are going to be
     git checkout upstream master to SEE what's about to happen
@@ -115,7 +115,7 @@ You can incorporate this into your daily workflow
     git pull upstream master
     git push
     [do work]
-    git commit -a 
+    git commit -a
     [add a good commit message]
     git push
     [Make a pull request]
@@ -166,7 +166,7 @@ range(6)
 ================================
 Functions:
 
-    
+
 def fun(x,y):
     z = x+y
     return z
@@ -183,7 +183,7 @@ Convention: global constants are ALL_CAPS
 
     Good convention to follow
 
-We have seen simple parameter lists: 
+We have seen simple parameter lists:
 
 def fun(x, y z):
 
@@ -203,13 +203,13 @@ fun(y=4, x=1)
 
 Once you've provided a keyword argument in this way, you can no longer provide any positional arguments
 
-e.g. fun(x=5, 6) 
+e.g. fun(x=5, 6)
 
 Documentation:
 
 Leave information in your code about what you were thinking when you wrote it
 
-There are two approaches to this: 
+There are two approaches to this:
 
     Comments (in line with code)
     #like this one
@@ -253,7 +253,7 @@ Recursion:
         if x ==1:
             return 1
         else:
-            return x * factorial(x - 1) 
+            return x * factorial(x - 1)
 
 
 Boolean Expressions!:
@@ -261,7 +261,7 @@ Boolean Expressions!:
     What is true or false in Python?
 
     Booleans: True and False (CAPITALIZED)
-    
+
     Something or Nothing
 
     Anything that is SOMETHING is True, anything that is Nothing is False
@@ -273,12 +273,12 @@ Boolean Expressions!:
 
     EVERYTHING ELSE is True
 
-    
+
 Pythonic Boolean:
 
     Any object, passed to bool() will evaluate to True or False
 
-    if xx == True: 
+    if xx == True:
 
         do_something()
 
@@ -300,24 +300,24 @@ Pythonic Boolean:
     'not' is an unary expression and inverts the boolean value of its operand:
 
         not True -> False
-        
+
         not False -> True
 
 Because of the return value of these keywords, you can write concise statements
 
 Ternary Expressions:
 
-    if something: 
+    if something:
 
         x = a_value
 
-    else: 
+    else:
 
         x = another_value
 
     y = 5 if x > 2 else 3
 
-    
+
 In Python, the boolean types are subclasses of integer:
 
     True == 1
@@ -326,7 +326,7 @@ In Python, the boolean types are subclasses of integer:
     False == 0
     True
 
-    
+
 
 Whitespace is great because it encourages good formatting
 
@@ -349,28 +349,28 @@ python is all about namespaces -- the "dots"
 
     A MODULE is simply a namespace
 
-    A package is a module with other modules inside it 
+    A package is a module with other modules inside it
 
         on a filesystem, this is represented as a directory that contains one or more .py files, one of which must be called __init__.py <---TURNS DIRECTORY FULL OF FILES INTO A PACKAGE
 
         Then you can import from that directory into another program
 
 
-When you import a module, or a symbol from a module, the Python code is compiled to bytecode, the result is a .pyc file 
+When you import a module, or a symbol from a module, the Python code is compiled to bytecode, the result is a .pyc file
 
     This executes ALL CODE AT THE MODULE SCOPE
 
     For this reason, it is good to avoid module-scope statements that have global side-effect
 
 
-The code in a module is NOT re-run when imported again, it must be explicitly reloaded with 
+The code in a module is NOT re-run when imported again, it must be explicitly reloaded with
 
     import modulename
     reload(modulename)
 
     python - m <---if module is somewhere in Python Path (set of directories it looks in) it will be executed
-    
-   You can also use the "run" command from within Ipython  
+
+   You can also use the "run" command from within Ipython
 
 ========================================
 
@@ -387,5 +387,5 @@ Implement Ackermann function
 
 
     Create a Fibonacci script
-    
+
    Check class site for homework :(

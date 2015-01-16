@@ -1,5 +1,5 @@
 ************************************
-Syllabus: Introduction to Python
+Syllabus: Introduction to Python XXXX
 ************************************
 
 UW Adult and Continuing Education Program
@@ -11,7 +11,7 @@ Certification in Python Programming
 Tuesdays 6-9 pm: Sept 30 - Dec 9, 2014 (10 Sessions)
 .....................................................
 
-
+Blah blah
 NOTE: in the spirit of the dynamic nature of Python, the Syllabus (and the class) will be a dynamic document -- evolving as the class progresses. The general structure is fixed, but the details will change.
 
 
@@ -228,5 +228,3 @@ Week 10: December 9
 Unicode
 
 Persistence / Serialization
-
-

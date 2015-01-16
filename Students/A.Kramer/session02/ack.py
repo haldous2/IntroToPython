@@ -15,5 +15,5 @@ if __name__ == '__main__':
     assert ack(3,4) == 125
     assert ack(4,0) == 13
     assert ack(3,2) == 29
-    
+
     print "All Tests Pass"
