@@ -48,7 +48,7 @@ def lucas_gen(n):
         yield a
         a, b = b, a + b
 
-def sum_series(n = 0, v1 = 0, v2 = 1):
+def sum_series(n, v1 = 0, v2 = 1):
 
     """Call sequence generator and print the nth value"""
 
