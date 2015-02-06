@@ -1,0 +1,54 @@
+
+ Eric Westman - Assessment section 05
+
+1a:
+
+-4 = It's negative!
+-3 = It's negative!
+-1 = It's negative!
+0  = Zero or less
+1  = Zero or more
+3  = Zero or more
+4  = Even number
+
+1b.
+default return of "Odd Number" will never happen
+
+2a.
+def count_backwards():
+    for x in range(100, 0, -7):
+        print x
+
+if __name__ == "__main__":
+    count_backwards()
+
+3a.
+For each line (x) in the following method, describe the circumstances under which
+it will run.
+
+def do_some_stuff():
+try:
+    doSomething1() # Line (a)
+    doSomething2() # Line (b)
+    return getValue1() # Line (c)
+except:
+    doSomeErrorHandling() # Line (d)
+    return getValue2() # Line (e)
+finally:
+    doSomeCleanup() # Line (f)
+doSomething3() #Line (g)
+
+line a: will run first - always
+line b: will run if line a doesn't crash
+line c: will run if line a and b don't crash - and if getValue doesn't crash
+line d: will run if a,b,c or getValue crash
+line e: will run if a,b,c or getValue crash
+line f: will always run
+line g: will always run - not a part of the try block
+
+3b. List all of the possible execution sequences of the lines in the above code
+
+1: a, b, c, f, g
+2: a, b, d, e, f, g
+3: a, d, e, f, g
+

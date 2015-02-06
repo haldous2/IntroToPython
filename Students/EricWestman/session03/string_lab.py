@@ -17,7 +17,9 @@ def string_number(n):
         else:
             sStr = "%i"
 
-        fStr += (x,)
+        #fStr += (x,)
+
+    fStr = tuple(range(1, n+ 1))
 
     print "The first %i numbers are: " % (n) + sStr%(fStr)
 

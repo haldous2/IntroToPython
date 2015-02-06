@@ -87,15 +87,19 @@ def addPerson(pPerson):
 
     if pPerson:
 
-        sPerson = "{\"name\":\"%s\", \"donations\":\"()\"}" % pPerson
-        people.append(sPerson)
+        dPerson = {}
+        dPerson["name"] = pPerson
+        dPerson["donations"] = []
+        people.append(dPerson)
 
 
-def donPerson(pPerson, pDonation=0):
+def donPerson(pPerson, pDonation=0.00):
 
     """
     Add donation to specified person in people
     """
+
+    dIdx = 0
 
     # Only update if donating
     if pDonation <= 0:
@@ -103,18 +107,20 @@ def donPerson(pPerson, pDonation=0):
         return
 
     # Find the donator
-    for index in range(len(people)):
+    for i, person in enumerate(people):
 
-        if (str(people[index]["name"]).lower() == str(pPerson).lower()):
+        if (str(person["name"]).lower() == pPerson.lower()):
 
-            dIdx = index
+            dIdx = i
             break
 
     # Update donation
     if dIdx:
 
+        print "found user @" + str(dIdx)
+
         #people[dIdx]["donations"].append(pDonation)
-        people[dIdx]["donations"].insert(0, pDonation)
+        people[dIdx]["donations"].insert(0, float(pDonation))
 
 def isNumeric(pNbr):
 
